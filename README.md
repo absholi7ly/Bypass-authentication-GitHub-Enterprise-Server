@@ -9,14 +9,14 @@ When GHES processes a fake SAML claim, it will not be able to validate its signa
 ## Poc:
 
 Steps:
-1-Open your penetration tester.
-2. Create a Web Connection Request.
-3. Select the "GET" request type.
-4. Enter your GHES URL.
-5. Add a fake SAML Assertion parameter to your request. You can find an example of a fake SAML Assertion parameter in the GitHub documentation.
-6. Check the GHES response.
-7. If the response contains an HTTP status code of 200, it has successfully bypassed authentication using the fake SAML Assertion parameter.
-8. If the response contains a different HTTP status code, it did not succeed in bypassing authentication.
+* Open your penetration tester.
+* Create a Web Connection Request. 
+* Select the "GET" request type.
+* Enter your GHES URL.
+* Add a fake SAML Assertion parameter to your request. You can find an example of a fake SAML Assertion parameter in the GitHub documentation.
+* Check the GHES response.
+* If the response contains an HTTP status code of 200, it has successfully bypassed authentication using the fake SAML Assertion parameter.
+* If the response contains a different HTTP status code, it did not succeed in bypassing authentication.
 
 ------------------------------------------------------------------
 Note: I'm going to synthesize an example using a dummy URL (https://your-ghes-instance.com). Be sure to replace it with your real GHES URL.
